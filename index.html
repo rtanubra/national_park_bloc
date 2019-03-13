@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>national_park</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>National Park Finder</h1>
+    <form>
+      <legend>Locate national parks by state</legend>
+      <br><br>
+      <label for=js-user-input >Provide 1 or more comma seperated letter digit state codes  </label>
+      <input id="js-user-input" placeholder="la,tx" type=text><br>
+      <label for ="js-result-max" >Input max search number</label>
+      <input id="js-result-max" type="number" min=1 step=1 value=10 max=100 >
+      <input type="submit">
+    </form>
+    <div class="hidden js-result-box">
+      <h2 class="js-results-header"></h2>
+      <ul class="js-results">
+
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
